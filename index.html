@@ -1,0 +1,665 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>花瓣美素</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" href="css/css.css"/>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+		<!-- 定义验证码图片的点击事件 -->
+		<script type="text/javascript">
+			function changeImg(obj){
+				obj.src="/web16_cookie_session/checkImg?time="+new Date().getTime() ;
+			}
+		</script>
+		
+	</head>
+	<body>
+		<div class="header">
+			<div class="wrapper">
+				<div class="logo">
+					<a href=""><img src="img/logo.png" alt="" /></a>
+				</div>
+				<div class="nav">
+					<div class="nav-left">
+						<a href="index.html" class="index">首页</a>
+						<a href="index2.html" class="index2">最新活动</a>
+						<a href="index3.html" class="index3">精选专区</a>
+						<a href="index4.html" class="index4">DCI专区</a>
+						<a href="index5.html" class="last-child">字体特惠套餐<img src="img/hot-icon.png"></a>
+					</div>
+					<div class="nav-right">
+						<span><img src="img/top1_1.png">套餐价格</span>
+						<span class="login">登录</span><b>|</b>
+						<span class="zhuce">注册</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 轮播图-->
+		<div class="slider" id="slider">
+			<ul id="slider_img">
+				<li class="slider_img_li"><img src="img/1.png" alt="" /></li>
+				<li class="slider_img_li"><img src="img/2.jpg" alt="" /></li>
+				<li class="slider_img_li"><img src="img/3.jpg" alt="" /></li>
+				<li class="slider_img_li"><img src="img/4.jpg" alt="" /></li>
+				<li class="slider_img_li"><img src="img/5.jpg" alt="" /></li>
+			</ul>
+			<div class="sousuo">
+				<input type="text" placeholder="搜索图片、矢量图和插图，多个词语注意用空格分隔，支持双语哦" />
+				<span class="one"><b>|</b>全部图片</span><span class="two"></span>
+				<div class="block" id="block">
+					<ul class="block-ul">
+						<li>全部照片</li>
+						<li>照片</li>
+						<li>矢量图</li>
+					</ul>
+				</div>
+				<button class="button"></button>
+			</div>
+			<div class="key">
+				<ul class="key-one">
+					<li><a href="">logo</a></li>
+					<li><a href="">名片</a></li>
+					<li><a href="">插画</a></li>
+					<li><a href="">画册</a></li>
+					<li><a href="">背景</a></li>
+				</ul>
+				<ul class="key-two">
+					<li><a href="">现代家居</a></li>
+					<li><a href="">母婴</a></li>
+					<li><a href="">夏天</a></li>
+					<li><a href="">科技</a></li>
+				</ul>
+			</div>
+			<div class="bottom">
+				<p>中国版权保护中心DCI体系示范平台！在线86272706张图片，本周新增467629张</p>
+			</div>
+			<ol class="ol">
+				<li class="ol_li current"></li>
+				<li class="ol_li"></li>
+				<li class="ol_li"></li>
+				<li class="ol_li"></li>
+				<li class="ol_li"></li>
+			</ol>
+		</div>
+		<!-- 轮播图部分结束-->
+		
+		<!--活动部分开始-->
+		<div class="activity">
+			<div class="wrapper">
+				<ul>
+					<li>
+						<div class="activity-img">
+							<div class="border"></div>
+							<img src="img/01.jpg"/>
+							<span class="in">买套餐送字体</span>
+						</div>
+						<div class="activity-text">
+							<span><img src="img/public.png"></span>
+							<h3>100%正品</h3>
+							<p>拒绝盗版，高额赔付，平台对作品版权永久担保，拒绝任何版权骚扰</p>
+						</div>
+					</li>
+					<li>
+						<div class="activity-img">
+							<div class="border"></div>
+							<img src="img/02.jpg"/>
+							<span class="in">版权登记</span>
+						</div>
+						<div class="activity-text">
+							<div class="border"></div>
+							<span><img src="img/pirce.png"></span>
+							<h3>价格低廉</h3>
+							<p>拒绝盗版，高额赔付，平台对作品版权永久担保，拒绝任何版权骚扰</p>
+						</div>
+					</li>
+					<li>
+						<div class="activity-img">
+							<div class="border"></div>
+							<img src="img/03.jpg"/>
+							<span class="in">微缩世界</span>
+						</div>
+						<div class="activity-text">
+							<span><img src="img/image.png"></span>
+							<h3>海量图片库</h3>
+							<p>拒绝盗版，高额赔付，平台对作品版权永久担保，拒绝任何版权骚扰</p>
+						</div>
+					</li>
+					<li>
+						<div class="activity-img">
+							<div class="border"></div>
+							<img src="img/04.jpg"/>
+							<span class="in">七夕海报专题</span>
+						</div>
+						<div class="activity-text">
+							<span><img src="img/fapiao.png"></span>
+							<h3>发票支持</h3>
+							<p>拒绝盗版，高额赔付，平台对作品版权永久担保，拒绝任何版权骚扰</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--活动部分结束-->
+		
+		<div class="content">
+			<div class="content-one">
+				<div class="wrapper">
+					<div class="content-title">
+						<p class="cn">七夕图片免费送</p>
+						<span class="bn"></span>
+						<p class="en">FREE PICTURES</p>
+					</div>
+					<div class="content-one-main">
+						<ul>
+							<li><a href=""><img src="img/001.jpg" alt="" /></a></li>
+							<li><a href=""><img src="img/002.jpg" alt="" /></a></li>
+							<li><a href=""><img src="img/003.jpg" alt="" /></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="content-two">
+				<div class="wrapper">
+					<div class="content-title">
+						<p class="cn">精选专辑</p>
+						<span class="bn"></span>
+						<p class="en">SELECTED ALBUM</p>
+						<span class="sn"><a href="">更多专辑</a></span>
+					</div>
+					<div class="content-two-main">
+						<ul>
+							<li class="pic1">
+								<a href="">
+									<img src="img/1-上.jpg" alt="" />
+									<div class="masking">
+										<h3>熊头熊脑</h3>
+									    <p>
+									    	共106张
+									    </p>
+									</div>
+								</a>
+							</li>
+							<li class="pic2">
+								<a href="">
+									<img src="img/2-上.jpg" alt="" />
+									<div class="masking">
+										<h3>纹身刺青</h3>
+									    <p>
+									    	共96张
+									    </p>
+									</div>
+								</a>
+							</li>
+							<li class="pic3">
+								<a href="">
+									<img src="img/3-上.jpg" alt="" />
+									<div class="masking">
+										<h3>本善料理</h3>
+									    <p>
+									    	共96张
+									    </p>
+									</div>
+								</a>
+							</li>
+							<li class="pic4">
+								<a href="">
+									<img src="img/4-上.jpg" alt="" />
+									<div class="masking">
+										<h3>孕产育儿</h3>
+									    <p>
+									    	共96张
+									    </p>
+									</div>
+								</a>
+							</li>
+							<li class="pic5">
+								<a href="">
+									<img src="img/1-中.jpg" alt="" />
+									<div class="masking">
+										<h3>生活服务</h3>
+									    <p>
+									    	共96张
+									    </p>
+									</div>
+								</a>
+							</li>
+							<li class="pic6">
+								<a href="">
+									<img src="img/2-中.jpg" alt="" />
+									<div class="masking">
+										<h3>动物世界</h3>
+									    <p>
+									    	共96张
+									    </p>
+									</div>
+								</a>
+							</li>
+							<li class="pic7">
+								<a href="">
+									<img src="img/3-中.jpg" alt="" />
+									<div class="masking">
+										<h3>禅思物语</h3>
+									    <p>
+									    	共96张
+									    </p>
+									</div>
+								</a>
+							</li>
+							<li class="pic8">
+								<a href="">
+									<img src="img/4-中.jpg" alt="" />
+									<div class="masking">
+										<h3>万马奔腾</h3>
+									    <p>
+									    	共96张
+									    </p>
+									</div>
+								</a>
+							</li>
+							<li class="pic9">
+								<a href="">
+									<img src="img/1-下.jpg" alt="" />
+									<div class="masking">
+										<h3>炫彩颗粒</h3>
+									    <p>
+									    	共96张
+									    </p>
+									</div>
+								</a>
+							</li>
+							<li class="pic10">
+								<a href="">
+									<img src="img/2-下.jpg" alt="" />
+									<div class="masking">
+										<h3>水族生物</h3>
+									    <p>
+									    	共96张
+									    </p>
+									</div>
+								</a>
+							</li>
+							<li class="pic11">
+								<a href="">
+									<img src="img/3-下.jpg" alt="" />
+									<div class="masking">
+										<h3>一盏茶时</h3>
+									    <p>
+									    	共96张
+									    </p>
+									</div>
+								</a>
+							</li>
+							<li class="pic12">
+								<a href="">
+									<img src="img/4-下.jpg" alt="" />
+									<div class="masking">
+										<h3>孕产育儿</h3>
+									    <p>
+									    	共96张
+									    </p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="content-three">
+				<div class="wrapper">
+					<div class="content-title">
+						<p class="cn">热门套餐</p>
+						<span class="bn"></span>
+						<p class="en">HOT PACKAGE</p>
+					</div>
+					<div class="content-three-main">
+						<ul>
+							<li class="hot-package">
+								<div class="hot-header">夏季限时促销套餐  10张<span class="hot-header-bn"></span></div>
+								<div class="hot-main">
+									<p class="hot-main-p">赠送4.9万元的7款版权字体</p>
+									<dl class="hot-main-dl">
+										<dd>
+											<p class="tit">数量</p>
+											<p class="num">10张</p>
+										</dd>
+										<dd>
+											<p class="tit">单价</p>
+											<p class="num">￥9.4</p>
+										</dd>
+										<dd>
+											<p class="tit">总价</p>
+											<p class="num">￥94</p>
+										</dd>
+									</dl>
+								</div>
+								<span class="hot-btn">立即购买</span>
+							</li>
+							
+							<li class="hot-package">
+								<div class="hot-header">50张<span class="hot-header-bn"></span></div>
+								<div class="hot-main">
+									<p class="hot-main-p"></p>
+									<dl class="hot-main-dl">
+										<dd>
+											<p class="tit">数量</p>
+											<p class="num">10张</p>
+										</dd>
+										<dd>
+											<p class="tit">单价</p>
+											<p class="num">￥9.4</p>
+										</dd>
+										<dd>
+											<p class="tit">总价</p>
+											<p class="num">￥94</p>
+										</dd>
+									</dl>
+								</div>
+								<span class="hot-btn">立即购买</span>
+							</li>
+							
+							<li class="hot-package">
+								<div class="hot-header">250张<span class="hot-header-bn"></span></div>
+								<div class="hot-main">
+									<p class="hot-main-p"></p>
+									<dl class="hot-main-dl">
+										<dd>
+											<p class="tit">数量</p>
+											<p class="num">10张</p>
+										</dd>
+										<dd>
+											<p class="tit">单价</p>
+											<p class="num">￥9.4</p>
+										</dd>
+										<dd>
+											<p class="tit">总价</p>
+											<p class="num">￥94</p>
+										</dd>
+									</dl>
+								</div>
+								<span class="hot-btn">立即购买</span>
+							</li>
+							
+							<li class="hot-package">
+								<div class="hot-header">1000张<span class="hot-header-bn"></span></div>
+								<div class="hot-main">
+									<p class="hot-main-p"></p>
+									<dl class="hot-main-dl">
+										<dd>
+											<p class="tit">数量</p>
+											<p class="num">10张</p>
+										</dd>
+										<dd>
+											<p class="tit">单价</p>
+											<p class="num">￥9.4</p>
+										</dd>
+										<dd>
+											<p class="tit">总价</p>
+											<p class="num">￥94</p>
+										</dd>
+									</dl>
+								</div>
+								<span class="hot-btn">立即购买</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="content-third">
+				<div class="wrapper">
+					<div class="content-title">
+						<p class="cn">艺术家</p>
+						<span class="bn"></span>
+						<p class="en">SELECTED ARTISTS</p>
+					</div>
+					<div class="content-third-main">
+						<ul>
+							<li>
+								<a href="">
+									<div class="content-third-main-img">
+										<img  src="img/ysj-1.jpg"/>
+										<span class="content-third-main-span">48694/作品</span>
+									</div>
+									<p>kkahdcg</p>
+								</a>
+							</li>
+							
+							<li>
+								<a href="">
+									<div class="content-third-main-img">
+										<img  src="img/ysj-2.jpg"/>
+										<span class="content-third-main-span">48694/作品</span>
+									</div>
+									<p>kkahdcg</p>
+								</a>
+							</li>
+							
+							<li>
+								<a href="">
+									<div class="content-third-main-img">
+										<img  src="img/ysj-3.jpg"/>
+										<span class="content-third-main-span">48694/作品</span>
+									</div>
+									<p>kkahdcg</p>
+								</a>
+							</li>
+							
+							<li>
+								<a href="">
+									<div class="content-third-main-img">
+										<img  src="img/ysj-4.jpg"/>
+										<span class="content-third-main-span">48694/作品</span>
+									</div>
+									<p>kkahdcg</p>
+								</a>
+							</li>
+							
+							<li>
+								<a href="">
+									<div class="content-third-main-img">
+										<img  src="img/ysj-5.jpg"/>
+										<span class="content-third-main-span">48694/作品</span>
+									</div>
+									<p>kkahdcg</p>
+								</a>
+							</li>
+							
+							<li>
+								<a href="">
+									<div class="content-third-main-img">
+										<img  src="img/ysj-6.jpg"/>
+										<span class="content-third-main-span">48694/作品</span>
+									</div>
+									<p>kkahdcg</p>
+								</a>
+							</li>
+							
+							<li>
+								<a href="">
+									<div class="content-third-main-img">
+										<img  src="img/ysj-7.jpg"/>
+										<span class="content-third-main-span">48694/作品</span>
+									</div>
+									<p>kkahdcg</p>
+								</a>
+							</li>
+							
+							<li>
+								<a href="">
+									<div class="content-third-main-img">
+										<img  src="img/ysj-8.jpg"/>
+										<span class="content-third-main-span">48694/作品</span>
+									</div>
+									<p>kkahdcg</p>
+								</a>
+							</li>
+							
+							<li>
+								<a href="">
+									<div class="content-third-main-img">
+										<img  src="img/ysj-9.jpg"/>
+										<span class="content-third-main-span">48694/作品</span>
+									</div>
+									<p>kkahdcg</p>
+								</a>
+							</li>
+							
+							<li>
+								<a href="">
+									<div class="content-third-main-img">
+										<img  src="img/ysj-10.jpg"/>
+										<span class="content-third-main-span">48694/作品</span>
+									</div>
+									<p>kkahdcg</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="content-four">
+				<div class="wrapper">
+					<div class="content-title">
+						<p class="cn">战略合作伙伴</p>
+						<span class="bn"></span>
+						<p class="en">STRATEGIC PARTNERS</p>
+					</div>
+					<div class="content-four-main">
+						<ul>
+							<li><a href=""><img src="img/h-img20.jpg" alt="" /></a></li>
+							<li><a href=""><img src="img/h-img21.jpg" alt="" /></a></li>
+							<li><a href=""><img src="img/h-img22.jpg" alt="" /></a></li>
+							<li><a href=""><img src="img/h-img23.jpg" alt="" /></a></li>
+							<li><a href=""><img src="img/h-img24.jpg" alt="" /></a></li>
+							<li><a href=""><img src="img/h-img25.jpg" alt="" /></a></li>
+							<li><a href=""><img src="img/h-img26.jpg" alt="" /></a></li>
+							<li><a href=""><img src="img/h-img27.jpg" alt="" /></a></li>
+							<li><a href=""><img src="img/h-img28.jpg" alt="" /></a></li>
+							<li><a href=""><img src="img/h-img29.jpg" alt="" /></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--底部开始-->
+		<div class="top-footer">
+			<div class="wrapper">
+				<div class="top-footer-txt">还没找到想要的正版图片？来搜索花瓣美素世界吧！</div>
+				<div class="top-footer-form">
+					<input type="text" placeholder="搜索图片、矢量图和插图，支持双语哦" />
+					<button class="top-footer-btn"></button>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="wrapper">
+				<div class="footer-logo">
+					<a href=""><img src="img/f_logo.png" alt="" /></a>
+					<h4><a href="">回到花瓣</a></h4>
+				</div>
+				<div class="footer-nav">
+					<dl>
+						<dd><a href="">关于我们</a></dd>
+						<dd><a href="">价格体系</a></dd>
+						<dd><a href="">联系我们</a></dd>
+					</dl>
+					<dl>
+						<dd><a href="">版权说明</a></dd>
+						<dd><a href="">服务条款</a></dd>
+						<dd><a href="">常见说明</a></dd>
+					</dl>
+				</div>
+				<div class="footer-kefu">
+					<div class="footer-kefu-img">
+						<img src="img/er.jpg" alt="" />
+					</div>
+					<div class="footer-kefu-txt">
+						<div class="footer-kefu-txt-kefu">
+							<a href=""><img src="img/ico47.png" alt="" />在线客服</a>
+						</div>
+						<h4>
+							400-999-8242<br>
+                            Email: contact@meisupic.com
+						</h4>
+					</div>
+				</div>
+				<div class="footer-link">
+					<h4>申请版权登记，让原创更有价值</h4>
+					<a href="">版权登记入口</a>
+				</div>
+			</div>
+			<div class="footer-p">
+				<p>Copyright ©2017 北京美素创意科技有限公司版权所有 京ICP备17042338号 </p>
+			</div>
+		</div>
+	    <!--底部结束-->
+	    <!--登录开始-->
+	    <div class="mask"></div>
+	    <div class="box">
+	    	<span class="close">x</span>
+	    	<div class="head">
+	    		<h2>登录</h2>
+	    		<span></span>
+	    	</div>
+	    	<form action="/flower/login" class="form" method="post">
+	    		<h4><a href="">点击此处用花瓣账号登录</a></h4>
+	    		<div class="form-login">
+	    			<input type="text" name="username" id="form-login-username" placeholder="用户名" />
+	    			<input type="password" name="password" id="form-login-password" placeholder="登录密码" />
+	    			<div class="rem">
+	    				<input type="checkbox" name="checkbox" id="login-remember" value="" />
+	    				<label for="login-remember"></label>
+	    				<span class="jzmm">记住密码</span>
+	    				<span class="wjmm">忘记密码?</span>
+	    			</div>
+	    		</div>
+	    		<div class="btn">
+	    			<input type="submit" value="登陆" >
+	    		</div>
+	    	</form>
+	    	<p>还没有注册？<span class="register" style="color:red">马上注册</span></p>
+	    </div>
+	    <!--登录结束-->
+	    
+	    
+	     <!--注册开始-->
+	    <div class="box-2" >
+	    	<span class="close">x</span>
+	    	<div class="head">
+	    		<h2>欢迎来到花瓣美素</h2>
+	    		<span></span>
+	    	</div>
+	    	<form action="/flower/register" class="form" method="post">
+	    		<div class="form-login">
+	    			<input type="text" name="telephone" id="form-login-shoujihao" placeholder="请输入手机号" />
+	    			<div class="form-group">
+						<div class="col-sm-3">
+							<input type="text" name="checkcode" id="form-login-yanzhengma" placeholder="请输入验证码" />
+							<img onclick="changeImg(this)"  class="form-btn" src="/flower/checkImg" />
+						</div>
+					</div>
+	    			<input type="text" name="username" id="form-login-nicheng" placeholder="用户名（必填）" />
+	    			<input type="password" name="password" id="form-login-pswd" placeholder="密码" />
+	    			<input type="password" name="form-login-pswdagain" id="form-login-pswdagain" placeholder="确认密码" />
+	    			<div class="rem">
+	    				<input type="checkbox" name="checkbox" id="checkbox1" value="" />
+	    				<label for="checkbox1"></label>
+	    				<span class="jzmm">我已阅读并同意<a href="">《服务条款》</a></span>
+	    			</div>
+	    		</div>
+	    		<div class="btn" >
+	    			<input type="submit" value="提交" >
+	    		</div>
+	    	</form>
+	    </div>
+	</body>
+</html>

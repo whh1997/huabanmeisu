@@ -1,0 +1,133 @@
+.bg1{
+	margin-bottom: 50px;
+	position: relative;
+	top: 0;
+	left: 50%;
+	margin-left: -680px;
+}
+.font-content .font-txt{
+	margin-bottom: 20px;
+	font-size: 16px;
+	color: #999;
+	position: relative;
+}
+.font-content .font-txt h3{
+	font-size: 24px;
+	color: #000;
+	padding-bottom: 5px;
+}
+.font-btn{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.font-btn a{
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 20px;
+	margin: 0 10px;
+    font-size: 14px;
+    color: #999;
+    border: 1px solid #999;
+    border-radius: 20px;
+}
+.font-btn a:hover{
+	border: 1px solid #FC4349;
+	color: #FC4349;
+}
+.font-img{
+	position: relative;
+}
+.font-img .font-img-span{
+	position: absolute;
+	left: 494px;
+	bottom: 90px;
+	display: inline-block;
+	width: 245px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	background: #FC4349;
+	cursor: pointer;
+}
+.font-img .font-img-span:hover{
+	background: #FF0000;
+}
+.bg2{
+	position: relative;
+	top: 80px;
+	left: 50%;
+	margin-left: -680px;
+}
+
+.font-bottom{
+	padding-top: 80px;
+	padding-bottom: 113px;
+	font-size: 14px;
+	color: #333;
+	background: #f5f5f5;
+	text-align: center;
+}
+.font-bottom .wrapper{
+	background: #fff;
+	box-shadow: 0px 1px 3px #e3e2e1;
+	height: 245px;
+}
+.font-bottom-txt1{
+	display: inline-block;
+	text-align: left;
+	padding-top: 65px;
+	margin: 0 85px;
+	vertical-align: top;
+}
+.font-bottom-txt1 h3{
+	font-size: 18px;
+	color: #000;
+}
+.font-bottom-txt1 p{
+	padding-top: 8px;
+}
+.font-bottom-txt2{
+	display: inline-block;
+	vertical-align: top;
+	width: 210px;
+	height: 245px;
+	position: relative;
+	box-shadow: 0px 0px 3px #d9d9d7;
+}
+.font-bottom-txt2 img{
+	padding-top: 16px;
+}
+.font-bottom-txt2 p{
+	padding-top: 10px;
+}
+.font-bottom-txt3{
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 65px;
+	margin: 0 85px;
+	text-align: left;
+}
+.font-bottom-txt3 h3{
+	font-size: 18px;
+	color: #000;
+}
+.font-bottom-txt3 p{
+	padding-top: 8px;
+}
+.font-bottom-txt3 num{
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+	border-radius: 50%;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	margin-top: -3px;
+	margin-right: 9px;
+	display: inline-block;
+	vertical-align: middle;
+}

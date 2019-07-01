@@ -1,0 +1,144 @@
+/*nav部分*/
+.header{
+	background: #222;
+}
+.header a{
+	color: #fff;
+}
+.header a:hover{
+	color: red;
+}
+.header span{
+	color: #fff;
+}
+.toper{
+	height: 80px;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+}
+.toper h2{
+	float: left;
+	line-height: 80px;
+	font-size: 28px;
+	color: #000;
+	font-weight: normal;
+}
+.toper .toper-sousuo{
+	width: 511px;
+	height: 42px;
+	float: right;
+	margin: 19px 0;
+}
+.toper-sousuo-btn{
+	width: 115px;
+	height: 42px;
+	line-height: 42px;
+	float: left;
+	background: #f4f4f4;
+	border: 1px solid #e0e0e0;
+	border-right: 0;
+	padding-left: 30px;
+    position: relative;
+    font-size: 14px;
+    cursor: pointer;
+}
+.toper-sousuo-btn img{
+	position: absolute;
+	top: 18px;
+	left: 110px;
+}
+.toper-sousuo-input{
+	width: 364px;
+	float: left;
+	display: inline;
+	position: relative;
+}
+.toper-sousuo-input input{
+	height: 42px;
+	line-height: 42px;
+	font-size: 16px;
+	padding-left: 33px;
+	width: 330px;
+	border: 1px solid #e0e0e0;
+	color: #666;
+}
+.toper-sousuo-input button{
+	width: 42px;
+	height: 42px;
+	line-height: 42px;
+	background: url(../img/ico2.png) no-repeat center;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	cursor: pointer;
+	text-align: center;
+	font-size: 18px;
+	border: 0;
+}
+.toper-sousuo{
+	position: relative;
+}
+.toper-sousuo-img{
+	position: absolute;
+	right: 60px;
+	top: 10px;
+	cursor: pointer;
+}
+/*nav部分结束*/
+
+
+/*正文部分*/
+.content{
+	padding-bottom: 200px;
+	background: #EEEEEE;
+}
+.content-title{
+	padding: 50px 0 30px;
+	text-align: center;
+	position: relative;
+}
+.content-title .cn{
+	font-size: 24px;
+	color: #221815;
+	padding-bottom: 15px;
+	line-height: 1;
+}
+.content-title .bn{
+	display: block;
+    width: 40px;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    top: 86px;
+    left: 588px;
+}
+
+.content-img{
+	margin: 20px 0;
+	position: relative;
+}
+.content-img img{
+	width: 1248px;
+	height: 400px;
+}
+.content-img .content-img-btn{
+	position: absolute;
+	top: 220px;
+	left: 517px;
+	width: 220px;
+	height: 50px;
+	font-size: 18px;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+}
+.content-img .content-img-btn:hover{
+	transition: all 0.3s;
+	background: #FC4349;
+	border: 0;
+}
+.content-img .end:hover{
+	border: 1px solid #fff;
+	background: none;
+}
